@@ -2,10 +2,10 @@ Bag of Words + LSTM for Sentiment Analysis
 
 This project performs sentiment analysis on a dataset of Amazon product reviews using a Long Short-Term Memory (LSTM) neural network. Instead of using pre-trained embeddings like Word2Vec, it employs a Bag of Words (BoW) representation for text input. The goal is to empirically evaluate the effectiveness of the BoW approach when used with LSTM, and compare it against other input encoding strategies in an empirical study.
 
-- Objective
+Objective
 The core objective of this experiment is to analyze how well the LSTM model performs sentiment classification when trained on Bag of Words features. This experiment is part of a broader dissertation project focused on the empirical evaluation of input representation methods in sentiment analysis using deep learning.
 
-- Methodology
+ Methodology
 1. Data Preprocessing
 Dataset: Amazon product reviews
 
@@ -29,7 +29,7 @@ The output matrix was reshaped into a 3D format suitable for LSTM input: (sample
 3. Model Architecture
 Framework: Keras (TensorFlow backend)
 
-- Architecture:
+ Architecture:
 
 One LSTM layer with 64 units
 
@@ -50,12 +50,11 @@ Batch size: 64
 
 Train/test split: 80/20
 
-Evaluation Results(for 10000 samples)
-Accuracy: 0.888
+Evaluation Results(for 15000 samples)
 
-Training Time: 10.65 seconds
-
-Testing Time: 0.89 seconds
+Accuracy: 0.9056666666666666
+Training Time: 8.126343965530396
+Testing Time: 0.7066547870635986
 
 - Additional Metrics:
 Precision, Recall, F1-score (via classification_report)
